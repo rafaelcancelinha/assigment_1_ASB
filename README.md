@@ -88,3 +88,11 @@ raxml.raxml.support: ML tree with bootstrap values.
   *.mrbayes.nex.con.tre: Bayesian consensus tree.
 
   .pdf / .svg: High-resolution tree visualizations (Phylogram and Cladogram).
+## Author Contributions
+
+This project was developed as part of the **ASB Assignment** by:
+
+* **Henrique Silva** – [GitHub Profile](https://github.com/henriquemsilvapb) 
+* **Sebastião Belo** – [GitHub Profile]()
+
+Both authors contributed equally to the design of the pipeline, script development, and phylogenetic data analysis.
