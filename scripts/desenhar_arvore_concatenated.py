@@ -17,7 +17,6 @@ from pathlib import Path
 # CONFIGURATION
 # ============================================================
 OUTGROUP_PREFIX = "Gamszarea"
-BOLD_GROUP = "Simplicillium sp"
 
 COL_PALETTE = {
     'very_high': '#1a4d0a',    # ≥95%
