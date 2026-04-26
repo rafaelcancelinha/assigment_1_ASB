@@ -11,7 +11,7 @@ MODO=$1
 
 if [ "$MODO" == "ITS" ]; then
     python scripts/pipeline.py nucleotide importante/ITS.txt
-    python scripts/desenhar_arvore.py arvore_ITS/raxml.raxml.support arvore_ITS/aligned.mrbayes.nex.con.tre ITS_001
+    python scripts/desenhar_arvore.py tree_ITS/raxml.raxml.support tree_ITS/aligned.mrbayes.nex.con.tre ITS_001
 
 elif [ "$MODO" == "concatenated" ]; then
     mkdir -p mafft
@@ -25,8 +25,7 @@ elif [ "$MODO" == "concatenated" ]; then
 
     python scripts/Seqconcact.py mafft/*_mafft.fasta
     python scripts/pipeline.py concatenated.fasta
-    python scripts/desenhar_arvore_concatenated.py arvore_concatenated/raxml.raxml.support arvore_concatenated/concatenated.mrbayes.nex.con.tre concatenated_001
-
+    python scripts/desenhar_arvore_concatenated.py tree_concatenated/raxml.raxml.support tree_concatenated/concatenated.mrbayes.nex.con.tre concatenated_v001
 else
     echo "Erro: modo '$MODO' não reconhecido. Usa 'ITS' ou 'concatenated'."
     exit 1
