@@ -159,8 +159,8 @@ def main():
         fetch_all(DATABASE, ACCESSIONS_FILE, RAW)
 
         # 2. Cleaning
-        from simple_fasta import simplify_fasta
-        simplify_fasta(RAW, CLEAN)
+        from simple_fasta import simplificar_fasta
+        simplificar_fasta(RAW, CLEAN)
 
         # 3. Alignment
         with open(ALIGNED, "w") as out:
